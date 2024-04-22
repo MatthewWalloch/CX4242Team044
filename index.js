@@ -540,7 +540,7 @@ function updateLegend(caseData, centralityByMonth, centrality, countyColor) {
     .attr("y", 125) // Position at the top of the rectangle
     .text(
       countyColor == "Risk Score"
-        ? "Risk Score:\n" + centrality
+        ? "Risk Score:\n " + centrality
         : "Cases per 100000"
     ); // Maximum case count
 
