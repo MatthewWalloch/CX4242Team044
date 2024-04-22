@@ -1,0 +1,47 @@
+.d3-tip {
+    /* Tooltip styles */
+    opacity: 0.9;
+    position: absolute;
+    padding: 10px;
+    background: rgba(245, 240, 240, 0.8);
+    border: 1px solid #000;
+    color: #000;
+}
+/* denny's code */
+.active-county {
+    stroke: #f00; /* Red outline */
+    stroke-width: 2px; /* Thicker outline */
+}
+
+.active-airport {
+    stroke: #00f; /* Blue outline */
+    stroke-width: 2px; /* Thicker outline */
+}
+  @keyframes moveWaves {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-80px); /* Half of the pattern width to make the loop smoother */
+    }
+}
+
+/* #svg rect {
+    animation: moveWaves 10s linear infinite;
+} */
+#panelText {
+    display: none;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+#legend {
+    animation: none;
+    transition: none;
+}
+
+  
+  
