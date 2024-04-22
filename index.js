@@ -736,30 +736,30 @@ function ready(
 }
 
 // case density data by county
-let caseData = d3.json("./data/data.json");
+let caseData = d3.json("data/data.json");
 
 // list of months we are considering
-let monthList = d3.csv("./data/months.csv");
+let monthList = d3.csv("data/months.csv");
 
 // GeoJSON data for the US map
-let usMap = d3.json("./data/counties.json");
+let usMap = d3.json("data/counties.json");
 
 // Lookup table of airport names and coordinates (key is 3-letter code)
-let airportLookup = d3.json("./data/airport_lookup.json");
+let airportLookup = d3.json("data/airport_lookup.json");
 
 // Infection data outgoing edges of the flight graph
-let sickEdgesByMonth = d3.json("./data/YearMonthEdgesSick.json");
+let sickEdgesByMonth = d3.json("data/YearMonthEdgesSick.json");
 
 // Infection data for incoming edges of the flight graph
 let sickEdgesByMonthReversed = d3.json(
-  "./data/YearMonthEdgesSickDestFirst.json"
+  "data/YearMonthEdgesSickDestFirst.json"
 );
 
 // Centrality data for the flight graph
-let centralityByMonth = d3.json("./data/YearMonthCentrality.json");
+let centralityByMonth = d3.json("data/YearMonthCentrality.json");
 
 // Risk Scores for each year, month, county
-let riskData = d3.json("./data/risk_scores.json");
+let riskData = d3.json("data/risk_scores.json");
 
 // Loads the data and starts the visualization
 Promise.all([
