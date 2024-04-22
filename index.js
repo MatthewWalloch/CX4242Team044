@@ -7,7 +7,7 @@ let monthDropdown = d3.select("#monthDropdown");
 let centralityDrowdown = d3.select("#centralitySelect");
 
 // select element for how to color the counties
-let colorDropdown = d3.select("#colorDropdown");
+let colorDropdown = d3.select("#colorToggle");
 
 // SVG element, will contain counties, airports, flight paths, state/nation boundaries
 let svg = d3.select("#svg");
